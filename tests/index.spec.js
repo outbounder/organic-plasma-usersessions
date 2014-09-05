@@ -125,9 +125,9 @@ describe("sessions", function(){
     })
   })
 
-  it("returns user", function(next){
+  it("returns owner", function(next){
     modelState = loggedUser
-    plasma.sessions(sessionStore).user(function(err, user){
+    plasma.sessions(sessionStore).owner(function(err, user){
       expect(user).toBe(loggedUser)
       next()
     })
