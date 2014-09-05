@@ -30,6 +30,7 @@ module.exports = function(plasma, dna) {
             uri: dna.remoteLoginEndpoint,
             json: c
           }, function(err, res, body){
+            if(err && err.code == "ECONNREFUSED") return callback()
             if(err) return callback(err)
             if(res.statusCode != 200) return callback(body)
             
@@ -61,6 +62,7 @@ module.exports = function(plasma, dna) {
             uri: dna.remoteAuthenticateEndpoint,
             json: data
           }, function(err, res, body){
+            if(err && err.code == "ECONNREFUSED") return callback()
             if(err) return callback(err)
             if(res.statusCode != 200) return callback(body)
             
