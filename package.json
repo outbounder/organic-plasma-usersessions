@@ -1,7 +1,6 @@
 {
-  "name": "organic-plasma-sessions",
-  "private": true,
-  "version": "0.0.0",
+  "name": "organic-plasma-usersessions",
+  "version": "0.0.1",
   "description": "Organelle as extension to orgnaic-plasma providing support for shared sessions managed on behalf of users.",
   "main": "index.js",
   "directories": {
@@ -17,10 +16,14 @@
   "scripts": {
     "test": "jasmine-node ./tests"
   },
+  "author": "Boris Filipov",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@lab.camplight.net:appecosystem/organic-plasma-sessions.git"
+    "url": "https://github.com/outbounder/organic-plasma-usersessions.git"
   },
-  "author": "Boris Filipov",
-  "license": "MIT"
+  "bugs": {
+    "url": "https://github.com/outbounder/organic-plasma-usersessions/issues"
+  },
+  "homepage": "https://github.com/outbounder/organic-plasma-usersessions"
 }
