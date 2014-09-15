@@ -1,4 +1,4 @@
-# organic-plasma-sessions
+# organic-plasma-usersessions
 
 Organelle as extension to orgnaic-plasma providing support for shared sessions managed on behalf of users.
 
